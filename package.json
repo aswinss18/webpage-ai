@@ -1,6 +1,7 @@
 {
   "name": "webpage-ai",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +11,9 @@
   "description": "",
   "dependencies": {
     "axios": "^1.11.0",
-    "cheerio": "^1.1.2"
+    "cheerio": "^1.1.2",
+    "chromadb": "^3.0.14",
+    "dotenv": "^17.2.2",
+    "openai": "^5.20.0"
   }
 }
