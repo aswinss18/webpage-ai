@@ -186,23 +186,23 @@ Retrieved Context: ${body.join(" ")}
 }
 
 // MAIN EXECUTION
-async function main() {
+async function main(url = "", question = "") {
   try {
     console.log("🚀 Starting website ingestion...");
 
     // First, ingest the website
-    await ingest("https://ssaswin.com");
+    await ingest(url);
 
     console.log(
       "\n🎯 Website ingestion complete! Now you can ask questions...\n"
     );
 
     // Then chat about it
-    await chat("What is this website about?");
+    await chat(question);
   } catch (error) {
     console.error("❌ Error:", error.message);
   }
 }
 
 // Run the main function
-main();
+main("https://ssaswin.com", "Who is Aswin?");
